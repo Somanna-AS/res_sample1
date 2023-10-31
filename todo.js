@@ -5,6 +5,7 @@ while(ch !== 'quit'){
         let item=prompt("enter the item ");
         chlist.push(item);
         ch='';
+        console.log("1 item added to the list..,,,!!!!");
     }
     else if(ch === 'list'){
         console.log('################');
@@ -18,6 +19,7 @@ while(ch !== 'quit'){
         ind=prompt("enter the index of the item to be deleted");
         chlist.splice(ind,1);
         ch='';
+        console.log("1 item deleted..,,,!!!!");
     }
     else{
         ch = prompt("enter ur choice");
