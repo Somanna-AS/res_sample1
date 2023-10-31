@@ -16,10 +16,12 @@ while(ch !== 'quit'){
         ch='';
     }
     else if(ch === 'delete'){
-        ind=prompt("enter the index of the item to be deleted");
-        chlist.splice(ind,1);
+        ind=parseInt(prompt("enter the index of the item to be deleted"));
+        if(!Number.isNaN(ind)){
+            chlist.splice(ind,1);
+            console.log("1 item deleted..,,,!!!!");
+        }
         ch='';
-        console.log("1 item deleted..,,,!!!!");
     }
     else{
         ch = prompt("enter ur choice");
