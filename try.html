@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="tgl">
+        
+    </div>
+    <script>
+        let cbtn=document.createElement('button');
+        cbtn.classList.add('cbt');
+        cbtn.innerText="ON";
+        document.querySelector('.tgl').append(cbtn)
+        let btnval=true;
+        cbtn.addEventListener('click',function(e){
+            btnval=!btnval;
+           console.log(btnval);
+           if(btnval){
+            cbtn.innerText='ON';
+           }else
+           {
+            cbtn.innerText='OFF';
+           }
+        })
+    </script>
+</body>
+</html>

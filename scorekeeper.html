@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+    <section class="section">
+    <div class="cointer">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-large">Score Keeper</p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="Title is-1"><span id="p1dis">0</span> to <span id="p2dis">0</span></h1>
+                            <p class="subtitle">Use the buttons to intract</p>
+                            <label for="topscr" class="label is-large is-inline">Top Score</label>
+                            <div class="select is-rounded">
+                                <select name="" id="topscr">
+                                    <option value="3">3</option>
+                                    <option value="5">5</option>
+                                    <option value="7">7</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1bt" class="is-primary button card-footer-item">+1 to Player One </button>
+                        <button id="p2bt" class="is-info button card-footer-item">+1 to Player Two </button>
+                        <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+   
+    <script src="./scorekeeper.js"></script>
+</body>
+</html>
